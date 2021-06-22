@@ -5,23 +5,54 @@ body {
   box-sizing: border-box;
 }
 header {
-  margin-top: 20%;
+  padding: 20%;
   display: flex;
   justify-content: center;
+  background-image: url(/images/main-images/ALX_2596.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  
 }
+
 .biography,
 .work-style {
-  margin: 2%;
+  margin: 2% 20%;
+}
+.latest-work{
+  margin: 10px;
 }
 .gallery {
-  margin: 10px;
+  margin: 0% 10% 0% 10%;
+  display: flex;
+  flex-wrap: wrap;
 }
 .gallery img {
   max-width: 320px;
   max-height: 320px;
+  margin: 2px;
+  
 }
+.container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "One Two Two"
+    "One Three Five"
+    "Six Three Five"
+    "Six Four Four"; 
+}
+.One { grid-area: One; }
+.Two { grid-area: Two; }
+.Three { grid-area: Three; }
+.Four { grid-area: Four; }
+.Five { grid-area: Five; }
+.Six { grid-area: Six; }
+
 @media only screen and (min-width:600px){
 img:hover {
-  transform: scale(2, 2);
+  transform: scale(1.5, 1.5);
 }
 }
