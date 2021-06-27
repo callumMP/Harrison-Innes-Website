@@ -5,6 +5,7 @@ body {
   box-sizing: border-box;
 }
 header {
+  margin-bottom: 10%;
   padding: 20%;
   display: flex;
   justify-content: center;
@@ -12,47 +13,70 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-  
 }
 
-.biography,
-.work-style {
-  margin: 2% 20%;
+h2{
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 7px;
 }
-.latest-work{
+#about-me {
+  
+  margin: 30px 50px 0 50px;
+}
+#what-i-do{
+  box-sizing: border-box;
+  margin: 18px 45px 0 45px;
+}
+#latest-work{
+  
+  margin: 18px 0 0 17.5px;
+}
+.biography,
+.work-style, .contact, .instagram {
+  margin: 2% 10%;
+}
+
+.biography {
+  display: flex !important;
+  flex-direction: column;
+}
+.work-style p, .biography p {
+  word-wrap: break-word;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.latest-work {
   margin: 10px;
 }
 .gallery {
-  margin: 0% 10% 0% 10%;
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
 }
 .gallery img {
-  max-width: 320px;
-  max-height: 320px;
+  max-width: 350px;
+  min-width: 300px;
+  max-height: 600px;
+  min-height: 280px;
   margin: 2px;
-  
 }
-.container {
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    "One Two Two"
-    "One Three Five"
-    "Six Three Five"
-    "Six Four Four"; 
+.bio-portrait {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 300px;
+  width: 300px;
 }
-.One { grid-area: One; }
-.Two { grid-area: Two; }
-.Three { grid-area: Three; }
-.Four { grid-area: Four; }
-.Five { grid-area: Five; }
-.Six { grid-area: Six; }
 
-@media only screen and (min-width:600px){
-img:hover {
-  transform: scale(1.5, 1.5);
-}
+@media only screen and (min-width: 600px) {
+  .gallery img:hover {
+    transform: scale(1.5, 1.5);
+  }
+  .gallery {
+    margin: 0% 10% 0% 10%;
+  }
 }
