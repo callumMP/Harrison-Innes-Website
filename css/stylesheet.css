@@ -51,9 +51,7 @@ button{
 .biography {
   display: flex !important;
   flex-direction: column;
-  color: #fff;
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-}
+  }
 
 .gallery {
   display: flex;
@@ -75,6 +73,7 @@ button{
   width: 300px;
   padding: 0 0 30px 0;
 }
+
 
 @media only screen and (min-width: 600px) {
   .gallery img:hover {
@@ -108,6 +107,9 @@ button{
     background-repeat: no-repeat;
     flex-direction: row;
     padding: 10%;
+    color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+
   }
   .contact{
     display: flex;
@@ -118,5 +120,8 @@ button{
   textarea{
     width: 50%;
     height: 100px;
+  }
+  .see-more{
+    margin: 0 47%;
   }
 }
